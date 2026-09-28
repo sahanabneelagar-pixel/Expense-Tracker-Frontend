@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.summary div {
+    padding: 20px;
+    text-align: center;
+    background: #eef4ff;
+    border-radius: 8px;
+}
+
+.summary p {
+    color: #2563eb;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #2563eb;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.cancel {
+    background: #64748b;
+}
+
+.cancel:hover {
+    background: #475569;
+}
+
+.filter-section {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-section div {
+    flex: 1;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f1f5f9;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+.edit {
+    background: #f59e0b;
+    width: auto;
+    padding: 7px 12px;
+}
+
+.delete {
+    background: #dc2626;
+    width: auto;
+    padding: 7px 12px;
+    margin-left: 5px;
+}
+
+.edit:hover {
+    background: #d97706;
+}
+
+.delete:hover {
+    background: #b91c1c;
+}
+
+#empty {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+    .summary,
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-section {
+        flex-direction: column;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
